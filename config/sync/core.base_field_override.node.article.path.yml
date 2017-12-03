@@ -1,0 +1,20 @@
+uuid: 23ac6b28-3cd7-4ecd-9f16-35c16c8b347f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - path
+id: node.article.path
+field_name: path
+entity_type: node
+bundle: article
+label: URL-синонім
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

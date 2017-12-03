@@ -1,0 +1,11 @@
+uuid: f50c640f-76f3-4deb-b213-c13a7f809ad9
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.banner
+id: node.banner
+target_entity_type_id: node
+target_bundle: banner
+default_langcode: site_default
+language_alterable: false

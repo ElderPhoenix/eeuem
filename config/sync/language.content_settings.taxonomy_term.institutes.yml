@@ -1,0 +1,16 @@
+uuid: 80357f85-4f86-44bb-a427-0be8705a6363
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.institutes
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.institutes
+target_entity_type_id: taxonomy_term
+target_bundle: institutes
+default_langcode: site_default
+language_alterable: true

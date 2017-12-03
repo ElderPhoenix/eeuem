@@ -1,0 +1,10 @@
+uuid: 6350552a-32e7-4445-947c-f051248320fb
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: 'Нижній колонтитул'
+description: 'Посилання відомостей про сайт'
+locked: true

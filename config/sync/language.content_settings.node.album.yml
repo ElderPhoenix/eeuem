@@ -1,0 +1,11 @@
+uuid: 37444138-5ba4-4486-ac5d-020ccf0ca739
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.album
+id: node.album
+target_entity_type_id: node
+target_bundle: album
+default_langcode: site_default
+language_alterable: false

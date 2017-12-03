@@ -1,0 +1,30 @@
+uuid: 45a5dd50-5d2c-4ce3-8cce-a158fc993004
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_address
+    - node.type.event
+  module:
+    - geolocation
+id: node.event.field_event_address
+field_name: field_event_address
+entity_type: node
+bundle: event
+label: 'Місце проведення'
+description: 'Позначте місце проведення події на карті'
+required: false
+translatable: false
+default_value:
+  -
+    controls:
+      location: 'вулиця Нечуя-Левицького, 16, Черкаси, Черкаська, Україна, 18000'
+    lat: '49.4054018'
+    lng: '32.053920699999935'
+    lat_sin: null
+    lat_cos: null
+    lng_rad: null
+    data: null
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

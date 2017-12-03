@@ -1,0 +1,9 @@
+uuid: fef25c51-acfe-4d1a-8407-6f3445dec37f
+langcode: uk
+status: true
+dependencies: {  }
+name: 'Тип події'
+vid: event_type
+description: 'Категорій подій (навчальний процес, виховна робота, тощо)'
+hierarchy: 0
+weight: 0

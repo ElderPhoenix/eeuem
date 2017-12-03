@@ -1,0 +1,29 @@
+uuid: 2e11f08c-58ac-40d8-86d2-68c6d8d28689
+langcode: uk
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_description
+    - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_dates
+    - field.field.node.event.field_event_place_name
+    - field.field.node.event.field_event_type
+    - node.type.event
+  module:
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_event_address: true
+  field_event_dates: true
+  field_event_place_name: true
+  field_event_type: true
+  langcode: true

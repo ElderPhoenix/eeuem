@@ -1,0 +1,11 @@
+uuid: e32e463f-a0e5-48a9-a889-b07ee12367a0
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.slide
+id: node.slide
+target_entity_type_id: node
+target_bundle: slide
+default_langcode: site_default
+language_alterable: true

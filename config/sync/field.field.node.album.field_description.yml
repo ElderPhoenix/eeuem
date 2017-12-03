@@ -1,0 +1,21 @@
+uuid: fde4ad0f-8ef5-4fd9-994d-f3f030714a5a
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.album
+  module:
+    - text
+id: node.album.field_description
+field_name: field_description
+entity_type: node
+bundle: album
+label: 'Опис альбому'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

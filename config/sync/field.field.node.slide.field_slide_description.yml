@@ -1,0 +1,19 @@
+uuid: e6fa7500-9f83-4b0e-8011-084fe9f7eaad
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slide_description
+    - node.type.slide
+id: node.slide.field_slide_description
+field_name: field_slide_description
+entity_type: node
+bundle: slide
+label: 'Опис слайду'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

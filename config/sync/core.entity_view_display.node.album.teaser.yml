@@ -1,0 +1,25 @@
+uuid: 8610f5c1-54eb-4117-b317-a4cf063bd39c
+langcode: uk
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.album.field_description
+    - field.field.node.album.field_image
+    - field.field.node.album.field_photos
+    - node.type.album
+  module:
+    - user
+id: node.album.teaser
+targetEntityType: node
+bundle: album
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_image: true
+  field_photos: true
+  langcode: true

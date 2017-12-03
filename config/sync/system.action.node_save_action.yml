@@ -1,0 +1,13 @@
+uuid: 1721208c-8a3f-4f7e-a8f5-53339e6e7996
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: U9HspszLxcw6pZmRacFa6yDbbheyMN-We4fPbrWWHGg
+id: node_save_action
+label: 'Зберегти матеріал'
+type: node
+plugin: node_save_action
+configuration: {  }

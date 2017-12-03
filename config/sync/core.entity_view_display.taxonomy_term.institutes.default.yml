@@ -1,0 +1,14 @@
+uuid: 0ab47344-cfdd-4d14-b775-0b7187085f5a
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.institutes
+id: taxonomy_term.institutes.default
+targetEntityType: taxonomy_term
+bundle: institutes
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

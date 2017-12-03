@@ -1,0 +1,17 @@
+uuid: 1a87749b-0d4a-40b1-89ee-e6ea6edd3321
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Слайд
+type: slide
+description: 'Кадр слайдеру для головної сторінки'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

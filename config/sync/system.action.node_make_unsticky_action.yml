@@ -1,0 +1,13 @@
+uuid: 96fcf35b-1d5f-4a6a-b93d-d390056f8aa9
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: lDM9mvIGAu8Sw8rt-uCO4Sr7yX5VPrDPxYcawkbKd6k
+id: node_make_unsticky_action
+label: 'Відкріпити матеріал'
+type: node
+plugin: node_make_unsticky_action
+configuration: {  }

@@ -1,0 +1,23 @@
+uuid: 12487543-aca2-4205-8d9f-aec51c51048c
+langcode: uk
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.banner.field_banner
+    - field.field.node.banner.field_banner_link
+    - node.type.banner
+  module:
+    - user
+id: node.banner.teaser
+targetEntityType: node
+bundle: banner
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_banner: true
+  field_banner_link: true
+  langcode: true

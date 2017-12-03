@@ -1,0 +1,11 @@
+uuid: 10452399-0079-4fcc-aedb-f972462c3e79
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.event_type
+id: taxonomy_term.event_type
+target_entity_type_id: taxonomy_term
+target_bundle: event_type
+default_langcode: site_default
+language_alterable: true

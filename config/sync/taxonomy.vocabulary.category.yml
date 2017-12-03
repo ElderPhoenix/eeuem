@@ -1,0 +1,9 @@
+uuid: 17262a81-23ae-459a-8d18-c6f0367f6796
+langcode: uk
+status: true
+dependencies: {  }
+name: Кагегорія
+vid: category
+description: 'Категорія новини'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,9 @@
+uuid: 4bdfeb5f-78fa-4943-a9f2-cc21aa3ddc9b
+langcode: uk
+status: true
+dependencies: {  }
+name: Інститути
+vid: institutes
+description: 'Інститути університету'
+hierarchy: 0
+weight: 0

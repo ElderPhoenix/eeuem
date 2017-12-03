@@ -1,0 +1,13 @@
+uuid: c27e47cd-5990-4f7b-8672-add9001e09bd
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: gGQXiSspwGl0lyOS6w_HCPpvGAPDciqDNLFwWOydVtI
+id: node_unpublish_action
+label: 'Зняти з публікації матеріал'
+type: node
+plugin: node_unpublish_action
+configuration: {  }
