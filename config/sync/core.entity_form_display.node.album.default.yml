@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.album.field_photos
     - node.type.album
   module:
-    - content_moderation
     - datetime
     - entity_browser
     - path
@@ -74,11 +73,13 @@ content:
       include_locked: true
     third_party_settings: {  }
   moderation_state:
-    type: moderation_state_default
-    weight: 7
-    settings: {  }
-    region: content
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
   path:
     type: path
     weight: 6
