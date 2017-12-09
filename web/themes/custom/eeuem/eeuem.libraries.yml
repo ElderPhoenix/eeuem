@@ -1,0 +1,19 @@
+global-styling:
+  css:
+    theme:
+      assets/css/eeuem.css: {}
+
+eeuem.js:
+  js:
+    assets/js/eeuem.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupalSettings
+
+bootstrap-scripts:
+  js:
+    assets/js/bootstrap.js: {}
+  dependencies:
+    - core/jquery
