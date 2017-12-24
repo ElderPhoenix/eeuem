@@ -1,0 +1,22 @@
+uuid: 4b2b0cbf-e7b4-4d77-8353-0e8c7c13c6a2
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - eeuem
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: eeuem_powered
+theme: eeuem
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

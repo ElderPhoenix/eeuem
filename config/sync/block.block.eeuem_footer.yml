@@ -1,4 +1,4 @@
-uuid: 7f2d98bc-96a4-48a8-b38c-804707dddb39
+uuid: 534d2b1c-f5a7-484a-b2d1-7803a0fdf040
 langcode: uk
 status: true
 dependencies:
@@ -7,18 +7,18 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - eeuem
 _core:
-  default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: bartik_footer
-theme: bartik
-region: footer_fifth
+  default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
+id: eeuem_footer
+theme: eeuem
+region: footer
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Меню нижнього колонтитулу'
+  label: 'Footer menu'
   provider: system
   label_display: '0'
   level: 1

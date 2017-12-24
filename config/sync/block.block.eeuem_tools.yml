@@ -1,4 +1,4 @@
-uuid: a86b62c6-9f16-403e-9f5b-140e2c34a8a1
+uuid: 6ef64f3f-2894-4f87-985a-9375a7b8f2af
 langcode: uk
 status: true
 dependencies:
@@ -7,18 +7,18 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - eeuem
 _core:
-  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
-id: bartik_tools
-theme: bartik
-region: sidebar_first
+  default_config_hash: f3Dd5TnUiFDjFZp9yEGJInwt6cUzs7O6SvLTFTATSlU
+id: eeuem_tools
+theme: eeuem
+region: sidebar_second
 weight: 0
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
   id: 'system_menu_block:tools'
-  label: Інструменти
+  label: Tools
   provider: system
   label_display: visible
   level: 1

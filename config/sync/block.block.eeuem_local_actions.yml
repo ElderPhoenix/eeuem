@@ -1,0 +1,20 @@
+uuid: 34061262-634c-40f4-8a20-b2f60c737dfc
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - eeuem
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: eeuem_local_actions
+theme: eeuem
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

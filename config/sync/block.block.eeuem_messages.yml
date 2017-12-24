@@ -1,0 +1,22 @@
+uuid: 96abeba4-61e7-4a8e-aa6f-2d4a4172a7bb
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - eeuem
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: eeuem_messages
+theme: eeuem
+region: header
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

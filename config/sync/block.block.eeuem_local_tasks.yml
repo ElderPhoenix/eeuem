@@ -1,20 +1,20 @@
-uuid: 609bf754-bac6-422f-84ed-441ba99edf3b
+uuid: 58263a19-2ece-47df-ba50-75b033f9bff3
 langcode: uk
 status: true
 dependencies:
   theme:
-    - bartik
+    - eeuem
 _core:
-  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: bartik_local_tasks
-theme: bartik
-region: content
-weight: -40
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: eeuem_local_tasks
+theme: eeuem
+region: header
+weight: 10
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Вкладки
+  label: Tabs
   provider: core
   label_display: '0'
   primary: true
