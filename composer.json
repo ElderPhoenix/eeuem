@@ -131,7 +131,8 @@
                 "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/2849867-custom_attributes_in_panels_blocks-11.patch"
             },
             "drupal/page_manager": {
-                "VariantRouteFilter patch": "https://www.drupal.org/files/issues/page_manager_variant_route_filter-2918564.patch"
+                "VariantRouteFilter patch": "https://www.drupal.org/files/issues/page_manager_variant_route_filter-2918564.patch",
+                "VariantSelection patch": "https://www.drupal.org/files/issues/page_manager-page_variants_selection-2868216-7.patch"
             }
         }
     }
