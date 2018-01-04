@@ -1,0 +1,12 @@
+uuid: 4470c154-d1cf-48b6-aa2c-9d0958d976cc
+langcode: uk
+status: true
+dependencies: {  }
+id: main
+label: Головна
+description: ''
+use_admin_theme: false
+path: /index
+access_logic: and
+access_conditions: {  }
+parameters: {  }

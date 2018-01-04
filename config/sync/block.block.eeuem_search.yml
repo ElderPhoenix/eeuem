@@ -10,8 +10,8 @@ _core:
   default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
 id: eeuem_search
 theme: eeuem
-region: sidebar_second
-weight: -1
+region: navigation
+weight: -4
 provider: null
 plugin: search_form_block
 settings:

@@ -10,8 +10,8 @@ _core:
   default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
 id: eeuem_powered
 theme: eeuem
-region: footer
-weight: -10
+region: copyright
+weight: -5
 provider: null
 plugin: system_powered_by_block
 settings:

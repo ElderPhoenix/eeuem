@@ -10,5 +10,11 @@
 // EEUEM variables
 @import "variables/variables";
 
+// EEUEM mixins
+@import "abstractions/mixins";
+
 // EEUEM base elements
 @import "base/typography";
+
+// EEUEM theme components
+@import "components/front-slider";

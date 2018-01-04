@@ -1,0 +1,8 @@
+uuid: a97f9d40-b2eb-4676-855d-be96e22d7dc7
+langcode: uk
+status: true
+dependencies: {  }
+id: secondary-navigation
+label: 'Вторинна навігація'
+description: 'Вторинна навігація'
+locked: false

@@ -1,0 +1,6 @@
+// Typography.
+@mixin section-title {
+  font-size: $font_size-heading-secondary;
+  text-transform: uppercase;
+  color: $text_alt;
+}

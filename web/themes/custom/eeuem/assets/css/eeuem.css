@@ -7302,6 +7302,33 @@ p {
   font-size: 1rem;
 }
 
+.front-slider .slide__content {
+  position: relative;
+}
+
+.front-slider .slide__caption {
+  position: absolute;
+  right: 5em;
+  bottom: 30%;
+  max-width: 30%;
+}
+
+.front-slider .slide__title {
+  font-size: 1.71429rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: inline-block;
+  float: right;
+  padding: 1rem 2rem;
+  background-color: #5087e8;
+}
+
+.front-slider .slide-description {
+  clear: both;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+}
+
 @media print {
   *,
   *:before,

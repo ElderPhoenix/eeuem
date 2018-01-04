@@ -1,0 +1,14 @@
+uuid: 1172a96f-0440-43b5-a303-902dfc6b3779
+langcode: uk
+status: true
+dependencies: {  }
+name: 1920x100_scale_crop
+label: '1920x604 scale crop'
+effects:
+  4f84d1eb-d8d8-449f-994d-42be2ff55903:
+    uuid: 4f84d1eb-d8d8-449f-994d-42be2ff55903
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 604

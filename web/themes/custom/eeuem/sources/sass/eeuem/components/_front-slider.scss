@@ -1,0 +1,26 @@
+.front-slider {
+  .slide__content {
+    position: relative;
+  }
+
+  .slide__caption {
+    position: absolute;
+    right: 5em;
+    bottom: 30%;
+    max-width: 30%;
+  }
+
+  .slide__title {
+    @include section-title;
+    display: inline-block;
+    float: right;
+    padding: 1rem 2rem;
+    background-color: $accent2;
+  }
+
+  .slide-description {
+    clear: both;
+    padding: 1rem 2rem;
+    background-color: $bg_main;
+  }
+}

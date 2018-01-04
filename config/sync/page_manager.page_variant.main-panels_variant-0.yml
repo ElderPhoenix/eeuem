@@ -1,0 +1,44 @@
+uuid: 3a3d38a0-a3f9-4037-be1e-ecf5d04babe4
+langcode: uk
+status: true
+dependencies:
+  config:
+    - page_manager.page.main
+    - views.view.front_slider
+  module:
+    - panels
+    - views
+id: main-panels_variant-0
+label: Main
+variant: panels_variant
+variant_settings:
+  blocks:
+    e0c6ba4d-88b8-44c1-8ffe-72eba3ac59f9:
+      id: 'views_block:front_slider-block_front_slider'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: e0c6ba4d-88b8-44c1-8ffe-72eba3ac59f9
+      context_mapping: {  }
+      css_classes: 'front-slider row'
+      css_id: ''
+      css_styles: ''
+  id: panels_variant
+  uuid: f19fa676-681a-4faf-a942-6e21ae30e578
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: main-panels_variant-0
+  builder: standard
+page: main
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
