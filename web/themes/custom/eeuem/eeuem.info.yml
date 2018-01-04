@@ -7,6 +7,7 @@ description: 'EEUEM Drupal theme.'
 package: 'Bootstrap'
 
 regions:
+  navigation_top: 'Top Navigation'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   header: 'Top Bar'
@@ -16,6 +17,7 @@ regions:
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'
   footer: 'Footer'
+  copyright: 'Copyright'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 

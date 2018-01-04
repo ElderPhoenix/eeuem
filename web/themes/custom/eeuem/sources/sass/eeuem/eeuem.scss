@@ -6,3 +6,9 @@
 
 // Base-theme overrides.
 @import 'bs-overrides/overrides';
+
+// EEUEM variables
+@import "variables/variables";
+
+// EEUEM base elements
+@import "base/typography";

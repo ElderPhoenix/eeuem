@@ -32,7 +32,7 @@ module.exports = function () {
   });
 
   var pxtorem = require('postcss-pxtorem')({
-    rootValue: 16,
+    rootValue: 14,
     unitPrecision: 5,
     replace: true,
     // propWhiteList: ['height', 'border', 'border-width', 'font', 'font-size', 'line-height', 'letter-spacing'],
