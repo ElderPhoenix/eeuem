@@ -51,138 +51,123 @@
  * @see html.html.twig
  */
 #}
-{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
-{# Navbar #}
-{% if page.navigation or page.navigation_collapsible %}
-  {% block navbar %}
-    {%
-      set navbar_classes = [
-        'navbar',
-        theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
-        theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
-      ]
-    %}
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
-      {% if not navbar_attributes.hasClass(container) %}
-        <div class="{{ container }}">
-      {% endif %}
-      <div class="navbar-header">
-        <div class="container clearfix">
-          <div class="row">
-            {{ page.navigation_top }}
+<div id="page-wrapper">
+  <div id="page">
+    {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+    {# Navbar #}
+    {% if page.navigation_top %}
+      {% block navbar %}
+        {% set navbar_classes = [
+          'navbar',
+          theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
+          theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
+        ] %}
+        <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+          {% if not navbar_attributes.hasClass(container) %}
+          <div class="{{ container }}">
+            {% endif %}
+            <div class="navbar-header">
+              <div class="container clearfix">
+                <div class="row">
+                  {{ page.navigation_top }}
+                </div>
+              </div>
+            </div>
+            {% if not navbar_attributes.hasClass(container) %}
           </div>
-        </div>
-        <div class="container clearfix">
+          {% endif %}
+        </header>
+      {% endblock %}
+    {% endif %}
+    {# Navigation #}
+    {% if page.navigation %}
+      {% block navigation %}
+        <div class="container clearfix navigation">
           <div class="row">
             {{ page.navigation }}
           </div>
         </div>
-        {# .btn-navbar is used as the toggle for collapsed navbar content #}
-        {% if page.navigation_collapsible %}
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        {% endif %}
-      </div>
+      {% endblock %}
+    {% endif %}
 
-      {# Navigation (collapsible) #}
-      {% if page.navigation_collapsible %}
-        <div id="navbar-collapse" class="navbar-collapse collapse clearfix">
+    {# Main #}
+    {% block main %}
+      <div role="main" class="main-container {{ container }} js-quickedit-main-content clearfix">
+        <div class="row">
+
+          {# Header #}
+          {% if page.header %}
+            {% block header %}
+              <div class="col-sm-12" role="heading">
+                {{ page.header }}
+              </div>
+            {% endblock %}
+          {% endif %}
+
+          {# Sidebar First #}
+          {% if page.sidebar_first %}
+            {% block sidebar_first %}
+              <aside class="col-sm-3" role="complementary">
+                {{ page.sidebar_first }}
+              </aside>
+            {% endblock %}
+          {% endif %}
+
+          {# Content #}
+          {% set content_classes = [
+            page.sidebar_first and page.sidebar_second ? 'col-sm-6',
+            page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
+            page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+            page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+          ] %}
+          <section{{ content_attributes.addClass(content_classes) }}>
+
+            {# Highlighted #}
+            {% if page.highlighted %}
+              {% block highlighted %}
+                <div class="highlighted clearfix">{{ page.highlighted }}</div>
+              {% endblock %}
+            {% endif %}
+
+            {# Help #}
+            {% if page.help %}
+              {% block help %}
+                {{ page.help }}
+              {% endblock %}
+            {% endif %}
+
+            {# Content #}
+            {% block content %}
+              <a id="main-content"></a>
+              {{ page.content }}
+            {% endblock %}
+          </section>
+
+          {# Sidebar Second #}
+          {% if page.sidebar_second %}
+            {% block sidebar_second %}
+              <aside class="col-sm-3" role="complementary">
+                {{ page.sidebar_second }}
+              </aside>
+            {% endblock %}
+          {% endif %}
+        </div>
+      </div>
+    {% endblock %}
+
+    {% if page.footer %}
+      {% block footer %}
+        <footer class="footer {{ container }}" role="contentinfo">
+          <div class="coontainer clearfix">
+            {{ page.footer }}
+          </div>
+        </footer>
+        <div class="copyright">
           <div class="container clearfix">
-            <div class="row">
-              {{ page.navigation_collapsible }}
-            </div>
+            {{ page.copyright }}
           </div>
         </div>
-      {% endif %}
-      {% if not navbar_attributes.hasClass(container) %}
-        </div>
-      {% endif %}
-    </header>
-  {% endblock %}
-{% endif %}
-
-{# Main #}
-{% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content clearfix">
-    <div class="row">
-
-      {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
-            {{ page.header }}
-          </div>
-        {% endblock %}
-      {% endif %}
-
-      {# Sidebar First #}
-      {% if page.sidebar_first %}
-        {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_first }}
-          </aside>
-        {% endblock %}
-      {% endif %}
-
-      {# Content #}
-      {%
-        set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
-        ]
-      %}
-      <section{{ content_attributes.addClass(content_classes) }}>
-
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted clearfix">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
-
-        {# Help #}
-        {% if page.help %}
-          {% block help %}
-            {{ page.help }}
-          {% endblock %}
-        {% endif %}
-
-        {# Content #}
-        {% block content %}
-          <a id="main-content"></a>
-          {{ page.content }}
-        {% endblock %}
-      </section>
-
-      {# Sidebar Second #}
-      {% if page.sidebar_second %}
-        {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_second }}
-          </aside>
-        {% endblock %}
-      {% endif %}
-    </div>
+      {% endblock %}
+    {% endif %}
   </div>
-{% endblock %}
-
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      <div class="coontainer clearfix">
-        {{ page.footer }}
-      </div>
-    </footer>
-    <div class="copyright">
-      <div class="container clearfix">
-        {{ page.copyright }}
-      </div>
-    </div>
-  {% endblock %}
-{% endif %}
+</div>

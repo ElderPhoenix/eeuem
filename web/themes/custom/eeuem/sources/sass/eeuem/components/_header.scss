@@ -1,0 +1,79 @@
+header.navbar {
+  background: linear-gradient(to bottom, #000000 0%,#0f2159 26%,#0f2159 26%,#133372 57%,#174089 84%);
+  border: none;
+  border-radius: 0;
+
+  .navbar-header {
+    width: 100%;
+  }
+
+  .region-navigation-top,
+  .region-navigation {
+    @include clearfix;
+  }
+
+  .block-responsive-menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 44px;
+    height: 35px;
+
+    @media (min-width: $screen-sm-min) {
+      display: none;
+    }
+  }
+
+  // Site branding
+  .logo {
+    display: block;
+    width: 128px;
+    margin: auto;
+    padding: 15px 0 0 0;
+
+    @media (min-width: $screen-sm-min) {
+      float: left;
+      margin: 0;
+      padding-left: $grid-gutter-width/2;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .branding {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .name {
+    @include section-title;
+  }
+
+  .slogan {
+    color: $text_alt;
+  }
+
+  .search-block-form {
+    width: 100%;
+    clear: both;
+    padding: 15px 0;
+
+    @media (min-width: $screen-sm-min){
+      clear: none;
+      float: right;
+      width: 17rem;
+    }
+
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// A hack to restore header boundaries.
+.container-fluid > .navbar-header {
+  margin: 0;
+}

@@ -7,7 +7,7 @@
   "devDependencies": {
     "autoprefixer": "latest",
     "breakpoint-sass": "latest",
-    "caniuse-db": "latest",
+    "caniuse-db": "^1.0.30000789",
     "css-mqpacker": "latest",
     "cssnano": "latest",
     "doiuse": "latest",

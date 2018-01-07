@@ -1,6 +1,14 @@
 // Typography.
+@mixin responsive-font-heading-secondary {
+  font-size: $font_size-heading-secondary-mobile;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: $font_size-heading-secondary;
+  }
+}
+
 @mixin section-title {
-  font-size: $font_size-heading-secondary;
+  @include responsive-font-heading-secondary;
   text-transform: uppercase;
   color: $text_alt;
 }
