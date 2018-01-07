@@ -38,7 +38,7 @@ module.exports = function () {
     // propWhiteList: ['height', 'border', 'border-width', 'font', 'font-size', 'line-height', 'letter-spacing'],
     propWhiteList: [],
     selectorBlackList: [/^html$/],
-    mediaQuery: true,
+    mediaQuery: false,
     minPixelValue: 0
   });
 
