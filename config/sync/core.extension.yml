@@ -52,6 +52,7 @@ module:
   page_manager_ui: 0
   panels: 0
   path: 0
+  responsive_menu: 0
   search: 0
   shortcut: 0
   slick: 0

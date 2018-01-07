@@ -1,0 +1,24 @@
+uuid: ac1d7a7a-0724-42fe-8384-4b44cc411fdb
+langcode: uk
+status: true
+dependencies:
+  module:
+    - block_class
+    - responsive_menu
+  theme:
+    - eeuem
+third_party_settings:
+  block_class:
+    classes: ''
+id: responsivemenumobileicon
+theme: eeuem
+region: navigation_top
+weight: 0
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  provider: responsive_menu
+  label_display: '0'
+visibility: {  }

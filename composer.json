@@ -50,9 +50,46 @@
                     "reference": "origin/master"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "FrDH/mmenu",
+                "version": "7.0.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://api.github.com/repos/FrDH/jQuery.mmenu/zipball",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "joeldbirch/superfish",
+                "version": "1.7.9",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://api.github.com/repos/joeldbirch/superfish/zipball",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "hammerjs/hammerjs",
+                "version": "2.0.8",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://api.github.com/repos/hammerjs/hammer.js/zipball",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
+        "FrDH/mmenu": "^7.0",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "desandro/imagesloaded": "3.1.8",
@@ -73,10 +110,13 @@
         "drupal/panels": "4.x-dev",
         "drupal/paragraphs": "1.x-dev",
         "drupal/pathauto": "1.x-dev",
+        "drupal/responsive_menu": "^2.5",
         "drupal/slick": "1.x-dev",
         "drupal/slick_views": "1.x-dev",
         "drush/drush": "9.x",
         "enyo/dropzone": "4.2.0",
+        "hammerjs/hammerjs": "^2.0",
+        "joeldbirch/superfish": "^1.7",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },

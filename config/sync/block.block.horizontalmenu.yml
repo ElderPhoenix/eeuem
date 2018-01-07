@@ -1,0 +1,24 @@
+uuid: e68b31ae-5326-4185-a62d-5a06846041b3
+langcode: uk
+status: true
+dependencies:
+  module:
+    - block_class
+    - responsive_menu
+  theme:
+    - eeuem
+third_party_settings:
+  block_class:
+    classes: ''
+id: horizontalmenu
+theme: eeuem
+region: navigation
+weight: 0
+provider: null
+plugin: responsive_menu_horizontal_menu
+settings:
+  id: responsive_menu_horizontal_menu
+  label: 'Horizontal menu'
+  provider: responsive_menu
+  label_display: '0'
+visibility: {  }

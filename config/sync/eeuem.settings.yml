@@ -4,7 +4,7 @@ _core:
 favicon:
   mimetype: image/jpeg
   path: 'public://256x256.jpg'
-  url: 'http://eeuem.local/themes/custom/eeuem/favicon.ico'
+  url: 'http://eeuem.local/sites/default/files/256x256.jpg'
   use_default: false
 schemas:
   bootstrap: 8000
@@ -16,10 +16,22 @@ logo:
 fluid_container: 1
 table_responsive: '-1'
 table: ''
+breadcrumb_home: 1
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-breadcrumb_home: 1
+region_wells:
+  navigation_top: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''
+  copyright: ''
 langcode: uk
