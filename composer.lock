@@ -1218,20 +1218,20 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "e11d84c6e018beedd929cff5220969a3c6d1d462"
+                "reference": "5527a48b7313d15261292c149e55e26eae771b0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/e11d84c6e018beedd929cff5220969a3c6d1d462",
-                "reference": "e11d84c6e018beedd929cff5220969a3c6d1d462",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/5527a48b7313d15261292c149e55e26eae771b0a",
+                "reference": "5527a48b7313d15261292c149e55e26eae771b0a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": "^7.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.2"
@@ -1239,7 +1239,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -1281,7 +1281,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2017-07-22T12:18:28+00:00"
+            "time": "2018-01-09T20:05:19+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1640,16 +1640,16 @@
         },
         {
             "name": "drupal/console",
-            "version": "1.3.2",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console.git",
-                "reference": "abc83134c6fb112b534cee84bf73c9f5f10f8a65"
+                "reference": "3fda33caa0fb8cb4a56f82d1b3006d4ae5a4c249"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/abc83134c6fb112b534cee84bf73c9f5f10f8a65",
-                "reference": "abc83134c6fb112b534cee84bf73c9f5f10f8a65",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/3fda33caa0fb8cb4a56f82d1b3006d4ae5a4c249",
+                "reference": "3fda33caa0fb8cb4a56f82d1b3006d4ae5a4c249",
                 "shasum": ""
             },
             "require": {
@@ -1657,7 +1657,7 @@
                 "composer/installers": "~1.0",
                 "doctrine/annotations": "^1.2",
                 "doctrine/collections": "^1.3",
-                "drupal/console-core": "1.3.2",
+                "drupal/console-core": "1.4.0",
                 "drupal/console-dotenv": "~0",
                 "drupal/console-extend-plugin": "~0",
                 "gabordemooij/redbean": "~4.3",
@@ -1715,25 +1715,25 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2018-01-04T09:00:17+00:00"
+            "time": "2018-01-08T19:12:50+00:00"
         },
         {
             "name": "drupal/console-core",
-            "version": "1.3.2",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-core.git",
-                "reference": "0a3959b31c1667b1f05f517edc9ae9d60193dcf7"
+                "reference": "d88f4e2ecef0cfcb488909ef3d1ee2e84b232499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/0a3959b31c1667b1f05f517edc9ae9d60193dcf7",
-                "reference": "0a3959b31c1667b1f05f517edc9ae9d60193dcf7",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/d88f4e2ecef0cfcb488909ef3d1ee2e84b232499",
+                "reference": "d88f4e2ecef0cfcb488909ef3d1ee2e84b232499",
                 "shasum": ""
             },
             "require": {
                 "dflydev/dot-access-configuration": "^1.0",
-                "drupal/console-en": "1.3.2",
+                "drupal/console-en": "1.4.0",
                 "php": "^5.5.9 || ^7.0",
                 "stecman/symfony-console-completion": "~0.7",
                 "symfony/config": "~2.8|~3.0",
@@ -1796,7 +1796,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2018-01-04T08:29:33+00:00"
+            "time": "2018-01-08T18:50:15+00:00"
         },
         {
             "name": "drupal/console-dotenv",
@@ -1839,16 +1839,16 @@
         },
         {
             "name": "drupal/console-en",
-            "version": "1.3.2",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-                "reference": "86ce043f17368e6e1919f7de9555f72d2b39c2b5"
+                "reference": "9dd8e8043aea0cabb3a44e5f3634bf629da5a018"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/86ce043f17368e6e1919f7de9555f72d2b39c2b5",
-                "reference": "86ce043f17368e6e1919f7de9555f72d2b39c2b5",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/9dd8e8043aea0cabb3a44e5f3634bf629da5a018",
+                "reference": "9dd8e8043aea0cabb3a44e5f3634bf629da5a018",
                 "shasum": ""
             },
             "type": "drupal-console-language",
@@ -1889,7 +1889,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2017-12-05T09:39:38+00:00"
+            "time": "2018-01-08T18:19:41+00:00"
         },
         {
             "name": "drupal/console-extend-plugin",
@@ -1938,12 +1938,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "ce445046cb9e15bb33609567881c599bd6d6bb13"
+                "reference": "138a71ff37d13a3b2ed113963e0de2e58858dbdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/ce445046cb9e15bb33609567881c599bd6d6bb13",
-                "reference": "ce445046cb9e15bb33609567881c599bd6d6bb13",
+                "url": "https://api.github.com/repos/drupal/core/zipball/138a71ff37d13a3b2ed113963e0de2e58858dbdf",
+                "reference": "138a71ff37d13a3b2ed113963e0de2e58858dbdf",
                 "shasum": ""
             },
             "require": {
@@ -2095,7 +2095,7 @@
                 "phpspec/prophecy": "^1.4",
                 "phpunit/phpunit": "^4.8.35 || ^6.1",
                 "symfony/css-selector": "~3.2.8",
-                "symfony/phpunit-bridge": "^3.4.0@beta"
+                "symfony/phpunit-bridge": "^3.4.3"
             },
             "type": "drupal-core",
             "autoload": {
@@ -2119,7 +2119,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-01-06T22:00:02+00:00"
+            "time": "2018-01-10T20:08:31+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2745,7 +2745,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/geolocation",
-                "reference": "f7059efb7fe884643d921b4ea998d1cdc6316802"
+                "reference": "c09f848136c84b716525a2e4d1d585c99ce24ad4"
             },
             "require": {
                 "drupal/core": "*"
@@ -2756,8 +2756,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.11+14-dev",
-                    "datestamp": "1513245185",
+                    "version": "8.x-1.11+19-dev",
+                    "datestamp": "1515597784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2783,7 +2783,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geolocation"
             },
-            "time": "2017-12-14T15:37:41+00:00"
+            "time": "2018-01-10T15:23:37+00:00"
         },
         {
             "name": "drupal/image_widget_crop",
@@ -3077,7 +3077,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/paragraphs",
-                "reference": "ec88de8e16e05ec224d99d14fbab14ea43caef3e"
+                "reference": "47fa7142123a05f996c6bf4f2d23ecf3b521c1a1"
             },
             "require": {
                 "drupal/core": "~8",
@@ -3098,8 +3098,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2+13-dev",
-                    "datestamp": "1514564584",
+                    "version": "8.x-1.2+15-dev",
+                    "datestamp": "1515574085",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3137,7 +3137,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/paragraphs"
             },
-            "time": "2018-01-04T13:44:52+00:00"
+            "time": "2018-01-10T15:28:15+00:00"
         },
         {
             "name": "drupal/pathauto",
@@ -3409,23 +3409,23 @@
         },
         {
             "name": "drush/drush",
-            "version": "9.0.0-rc1",
+            "version": "9.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "20360f1c590f53a196e971b180c91b625eb9ed98"
+                "reference": "c90592629c5a2539c6f381f874f3ce4c221ee539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/20360f1c590f53a196e971b180c91b625eb9ed98",
-                "reference": "20360f1c590f53a196e971b180c91b625eb9ed98",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/c90592629c5a2539c6f381f874f3ce4c221ee539",
+                "reference": "c90592629c5a2539c6f381f874f3ce4c221ee539",
                 "shasum": ""
             },
             "require": {
-                "chi-teck/drupal-code-generator": "^1.17.3",
+                "chi-teck/drupal-code-generator": "^1.21.0",
                 "composer/semver": "^1.4",
                 "consolidation/annotated-command": "^2.8.1",
-                "consolidation/config": "^1.0.7",
+                "consolidation/config": "^1.0.9",
                 "consolidation/output-formatters": "^3.1.12",
                 "consolidation/robo": "^1.1.5",
                 "ext-dom": "*",
@@ -3462,6 +3462,7 @@
             "autoload": {
                 "psr-4": {
                     "Drush\\": "src/",
+                    "Drush\\Internal\\": "internal-copy/",
                     "Unish\\": "tests/"
                 }
             },
@@ -3505,7 +3506,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2017-11-30T16:06:54+00:00"
+            "time": "2018-01-09T18:10:22+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
