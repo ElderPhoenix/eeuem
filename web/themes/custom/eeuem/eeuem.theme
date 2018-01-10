@@ -5,3 +5,12 @@
  *
  * Place your custom PHP code in this file.
  */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ */
+function eeuem_form_search_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $form['keys']['#title'] = t('Ваш запит...');
+}

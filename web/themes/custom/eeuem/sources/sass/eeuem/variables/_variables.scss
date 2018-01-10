@@ -1,4 +1,4 @@
-//Colours
+// Colours.
 $accent1: #174089;
 $accent2: #5087e8;
 $bg_main: #ffffff;
@@ -8,8 +8,22 @@ $text_muted: #b8bbc3;
 $text_main: #434d53;
 $text_alt: #ffffff;
 
-//Typography
+// Typography.
 $font-size-base: 14px;
-$font_size-heading-secondary: 24px;
-$font_size-heading-secondary-mobile: 20px;
+$font_size-heading-primary: 24px;
+$font_size-heading-primary-mobile: 20px;
+$font_size-heading-secondary: 18px;
 $font_size-reduced: 12px;
+
+// Spacers.
+$spacer-horizontal-standard: 30px;
+$spacer-horizontal-reduced: 15px;
+$spacer-horizontal-tiny: 8px;
+
+$spacer-vertical-standard: 30px;
+$spacer-vertical-reduced: 15px;
+$spacer-vertical-tiny: 8px;
+
+// Shadows.
+$shadow-section: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+$shadow-section-inset: inset 0 -5px 5px 0 rgba(0,0,0,0.25);

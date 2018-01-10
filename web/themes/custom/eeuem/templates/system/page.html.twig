@@ -82,9 +82,11 @@
     {# Navigation #}
     {% if page.navigation %}
       {% block navigation %}
-        <div class="container clearfix navigation">
-          <div class="row">
-            {{ page.navigation }}
+        <div class="clearfix navigation">
+          <div class="container">
+            <div class="row">
+              {{ page.navigation }}
+            </div>
           </div>
         </div>
       {% endblock %}
@@ -92,7 +94,11 @@
 
     {# Main #}
     {% block main %}
-      <div role="main" class="main-container {{ container }} js-quickedit-main-content clearfix">
+      {% if is_front %}
+        <div role="main" class="main-container container-fluid js-quickedit-main-content clearfix">
+      {% else %}
+        <div role="main" class="main-container container js-quickedit-main-content clearfix">
+      {% endif %}
         <div class="row">
 
           {# Header #}

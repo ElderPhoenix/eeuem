@@ -2,6 +2,8 @@ header.navbar {
   background: linear-gradient(to bottom, #000000 0%,#0f2159 26%,#0f2159 26%,#133372 57%,#174089 84%);
   border: none;
   border-radius: 0;
+  box-shadow: $shadow-section;
+  margin-bottom: 0;
 
   .navbar-header {
     width: 100%;
@@ -10,12 +12,13 @@ header.navbar {
   .region-navigation-top,
   .region-navigation {
     @include clearfix;
+    position: relative;
   }
 
   .block-responsive-menu-toggle {
     position: absolute;
     top: 0;
-    right: 5px;
+    left: -11px;
     width: 44px;
     height: 35px;
 
@@ -29,12 +32,13 @@ header.navbar {
     display: block;
     width: 128px;
     margin: auto;
-    padding: 15px 0 0 0;
+    padding: 15px 0;
 
     @media (min-width: $screen-sm-min) {
       float: left;
       margin: 0;
       padding-left: $grid-gutter-width/2;
+      width: 108px;
     }
 
     img {
@@ -46,14 +50,30 @@ header.navbar {
     width: 100%;
     padding: 15px 0;
     text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      float: left;
+      width: 45%;
+      text-align: left;
+      padding-left: $grid-gutter-width/2;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      padding-top: $grid-gutter-width;
+    }
   }
 
   .name {
     @include section-title;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .slogan {
     color: $text_alt;
+    font-size: $font_size-heading-secondary;
   }
 
   .search-block-form {
@@ -62,13 +82,41 @@ header.navbar {
     padding: 15px 0;
 
     @media (min-width: $screen-sm-min){
-      clear: none;
-      float: right;
+      position: absolute;
+      bottom: 0;
+      right: $grid-gutter-width/2;
       width: 17rem;
     }
 
     .form-group {
       margin-bottom: 0;
+    }
+
+    .form-search {
+      border-right: none;
+
+      &:focus,
+      &:active {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+
+
+    .form-submit {
+      border-color: $btn-default-border;
+      background-color: $btn-default-bg;
+      border-left: none;
+
+      &:focus,
+      &:active {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+
+    .glyphicon-search {
+      color: $text_muted;
     }
   }
 }

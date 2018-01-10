@@ -16,8 +16,12 @@
 // EEUEM base elements
 @import "base/typography";
 @import "base/layout";
+@import "base/links";
 
 // EEUEM theme components
 @import "components/admin-toolbar";
+@import "components/slick-carousel";
 @import "components/front-slider";
 @import "components/header";
+@import "components/navigation";
+@import "components/news-carousel";

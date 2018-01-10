@@ -1,0 +1,50 @@
+.navigation {
+  padding: 0;
+  box-shadow: $shadow-section;
+
+  .horizontal-menu {
+    & > .menu-item {
+      display: block;
+      float: left;
+
+      & > a,
+      & > span {
+        display: block;
+        padding: $spacer-vertical-reduced;
+        font-size: $font-size-base;
+        color: $text_main;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          color: $text_alt;
+          background-color: $accent1;
+        }
+      }
+
+      & > a.is-active {
+        color: $text_alt;
+        background-color: $accent1;
+      }
+
+      &.sfHover > a,
+      &.sfHover > span {
+        color: $text_alt;
+        background-color: $accent1;
+      }
+    }
+
+    .sub-nav {
+      padding: 0 $spacer-vertical-reduced;
+      background-color: $accent1;
+
+      a {
+        padding: $spacer-vertical-reduced 0 $spacer-vertical-tiny 0;
+        margin-bottom: $spacer-vertical-tiny - 1;
+        color: $text_alt;
+        text-transform: uppercase;
+        border-bottom: 1px solid $text_alt;
+      }
+    }
+  }
+}
