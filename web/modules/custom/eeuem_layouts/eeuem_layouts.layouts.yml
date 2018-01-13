@@ -1,0 +1,13 @@
+layout_twocol_4_8:
+  label: 'Two column 4/8'
+  path: layouts/twocol_4_8
+  template: layout--twocol-4-8
+  category: 'Columns: 2'
+  default_region: right
+  icon_map:
+    - [left, right]
+  regions:
+    left:
+      label: Sidebar
+    right:
+      label: Main

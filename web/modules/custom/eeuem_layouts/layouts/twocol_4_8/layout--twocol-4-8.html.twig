@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Template for a 2 column panel layout.
+ *
+ * This template provides a two column 4-8 panel display layout.
+ *
+ * Variables:
+ * - $id: An optional CSS id to use for the layout.
+ * - $content: An array of content, each item in the array is keyed to one
+ *   panel of the layout. This layout supports the following sections:
+ *   - content.left: Content in the left column.
+ *   - content.right: Content in the right column.
+ */
+#}
+{%
+  set classes = [
+  'layout',
+  'layout--twocol-25-75',
+]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if content.left %}
+      <div {{ region_attributes.left.addClass('layout__region', 'layout__region--left', 'col-sm-4') }}>
+        {{ content.left }}
+      </div>
+    {% endif %}
+
+    {% if content.right %}
+      <div {{ region_attributes.right.addClass('layout__region', 'layout__region--right', 'col-sm-8') }}>
+        {{ content.right }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
