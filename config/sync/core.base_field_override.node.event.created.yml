@@ -1,0 +1,18 @@
+uuid: c94ce1da-a656-4476-94df-387fc917f337
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.event
+id: node.event.created
+field_name: created
+entity_type: node
+bundle: event
+label: Створено
+description: 'Час створення матеріалу.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -13,15 +13,9 @@ logo:
   path: 'public://logo_256x256.png'
   url: ''
   use_default: false
-fluid_container: 1
 table_responsive: '-1'
 table: ''
 breadcrumb_home: 1
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
 region_wells:
   navigation_top: ''
   navigation: ''
@@ -31,7 +25,13 @@ region_wells:
   help: ''
   content: ''
   sidebar_first: ''
-  sidebar_second: well
+  sidebar_second: ''
   footer: ''
   copyright: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+fluid_container: 1
 langcode: uk

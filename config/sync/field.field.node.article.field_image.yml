@@ -22,7 +22,7 @@ default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '8 МБ'
+  max_filesize: '8 MB'
   max_resolution: 1920x1200
   min_resolution: 600x315
   alt_field: true

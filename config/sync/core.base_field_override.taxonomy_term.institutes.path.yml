@@ -1,0 +1,20 @@
+uuid: c0e86831-e741-4f6e-aa8c-16511602078d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.institutes
+  module:
+    - path
+id: taxonomy_term.institutes.path
+field_name: path
+entity_type: taxonomy_term
+bundle: institutes
+label: URL-синонім
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

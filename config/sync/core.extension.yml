@@ -23,6 +23,7 @@ module:
   dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
   editor: 0
+  eeuem_layouts: 0
   embed: 0
   entity_browser: 0
   entity_embed: 0

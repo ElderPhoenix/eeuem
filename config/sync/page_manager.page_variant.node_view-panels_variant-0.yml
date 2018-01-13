@@ -1,0 +1,59 @@
+uuid: 2cb6bf7d-f67d-4290-a16b-f8edcbbaa395
+langcode: uk
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - system.menu.main
+  module:
+    - ctools
+    - panels
+    - system
+id: node_view-panels_variant-0
+label: Node
+variant: panels_variant
+variant_settings:
+  blocks:
+    58578e1a-28ed-4f2f-b47f-4b899c4a96c8:
+      id: 'entity_view:node'
+      label: 'Вид сутності (Content)'
+      provider: ctools
+      label_display: visible
+      view_mode: default
+      region: right
+      weight: 0
+      uuid: 58578e1a-28ed-4f2f-b47f-4b899c4a96c8
+      context_mapping:
+        entity: node
+      css_classes: ''
+      css_id: ''
+      css_styles: ''
+    ccf26855-7a2a-4103-86fd-40e22dbf79fd:
+      id: 'system_menu_block:main'
+      label: 'Основна навіґація'
+      provider: system
+      label_display: visible
+      level: 2
+      depth: 0
+      region: left
+      weight: 0
+      uuid: ccf26855-7a2a-4103-86fd-40e22dbf79fd
+      context_mapping: {  }
+      css_classes: ''
+      css_id: ''
+      css_styles: ''
+  id: panels_variant
+  uuid: ff001d29-ecbf-4c01-baf5-0ad80d57822d
+  label: null
+  weight: 0
+  layout: layout_twocol_4_8
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-0
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

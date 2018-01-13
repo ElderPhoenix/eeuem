@@ -1,0 +1,18 @@
+uuid: 2869106b-cb28-4dbf-8b2c-749e68fb44e1
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.institutes
+id: taxonomy_term.institutes.name
+field_name: name
+entity_type: taxonomy_term
+bundle: institutes
+label: 'Назва (ім''я)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

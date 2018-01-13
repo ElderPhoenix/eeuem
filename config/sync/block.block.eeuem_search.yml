@@ -3,9 +3,13 @@ langcode: uk
 status: true
 dependencies:
   module:
+    - block_class
     - search
   theme:
     - eeuem
+third_party_settings:
+  block_class:
+    classes: ''
 _core:
   default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
 id: eeuem_search
@@ -16,7 +20,7 @@ provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: Search
+  label: Пошук
   provider: search
   label_display: visible
 visibility: {  }

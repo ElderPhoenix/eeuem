@@ -5,6 +5,7 @@ dependencies:
   config:
     - page_manager.page.main
     - views.view.front_slider
+    - views.view.news_carousel
   module:
     - panels
     - views
@@ -25,6 +26,20 @@ variant_settings:
       uuid: e0c6ba4d-88b8-44c1-8ffe-72eba3ac59f9
       context_mapping: {  }
       css_classes: 'front-slider row'
+      css_id: ''
+      css_styles: ''
+    80afce88-4475-4c16-adb7-3c3afa3b0672:
+      id: 'views_block:news_carousel-block_news_carousel'
+      label: Новини
+      provider: views
+      label_display: visible
+      views_label: Новини
+      items_per_page: none
+      region: content
+      weight: 1
+      uuid: 80afce88-4475-4c16-adb7-3c3afa3b0672
+      context_mapping: {  }
+      css_classes: ''
       css_id: ''
       css_styles: ''
   id: panels_variant

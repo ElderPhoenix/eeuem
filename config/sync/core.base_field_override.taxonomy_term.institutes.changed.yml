@@ -1,0 +1,18 @@
+uuid: 656f1e43-fd8b-477e-9e00-f51680d8f862
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.institutes
+id: taxonomy_term.institutes.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: institutes
+label: Змінено
+description: 'Час останнього редагування терміна.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

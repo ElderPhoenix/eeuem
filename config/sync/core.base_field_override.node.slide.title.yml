@@ -1,0 +1,18 @@
+uuid: fff37dd4-e792-4961-bd31-0ce37fa149bc
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.slide
+id: node.slide.title
+field_name: title
+entity_type: node
+bundle: slide
+label: Заголовок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

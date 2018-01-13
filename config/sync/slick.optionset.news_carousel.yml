@@ -8,12 +8,12 @@ label: 'Карусель новин'
 weight: 0
 group: ''
 skin: ''
-breakpoints: 0
+breakpoints: 2
 optimized: false
 options:
   options__active_tab: edit-options-settings
   settings:
-    mobileFirst: true
+    mobileFirst: false
     asNavFor: ''
     accessibility: true
     adaptiveHeight: false
@@ -58,8 +58,76 @@ options:
     cssEaseBezier: ''
     cssEaseOverride: ''
     useTransform: true
-    easing: linear
+    easing: ''
     variableWidth: false
     vertical: false
     verticalSwiping: false
     waitForAnimate: true
+  responsives:
+    responsive:
+      -
+        breakpoint: 600
+        unslick: false
+        settings:
+          adaptiveHeight: false
+          autoplay: false
+          autoplaySpeed: 3000
+          pauseOnHover: false
+          pauseOnDotsHover: false
+          arrows: false
+          centerMode: false
+          centerPadding: 50px
+          dots: true
+          draggable: true
+          fade: false
+          focusOnSelect: false
+          infinite: true
+          initialSlide: 0
+          respondTo: window
+          rows: 1
+          slidesPerRow: 1
+          slidesToShow: 1
+          slidesToScroll: 1
+          speed: 500
+          swipe: true
+          swipeToSlide: false
+          edgeFriction: 0.35
+          touchMove: false
+          touchThreshold: 5
+          variableWidth: false
+          vertical: false
+          verticalSwiping: false
+          waitForAnimate: true
+      -
+        breakpoint: 1200
+        unslick: false
+        settings:
+          adaptiveHeight: false
+          autoplay: false
+          autoplaySpeed: 3000
+          pauseOnHover: false
+          pauseOnDotsHover: false
+          arrows: false
+          centerMode: false
+          centerPadding: 50px
+          dots: true
+          draggable: true
+          fade: false
+          focusOnSelect: false
+          infinite: true
+          initialSlide: 0
+          respondTo: window
+          rows: 1
+          slidesPerRow: 1
+          slidesToShow: 2
+          slidesToScroll: 1
+          speed: 500
+          swipe: true
+          swipeToSlide: false
+          edgeFriction: 0.35
+          touchMove: false
+          touchThreshold: 5
+          variableWidth: false
+          vertical: false
+          verticalSwiping: false
+          waitForAnimate: true

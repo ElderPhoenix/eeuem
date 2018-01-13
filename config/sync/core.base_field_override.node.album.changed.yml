@@ -1,0 +1,18 @@
+uuid: aac8c72a-7786-4601-b450-52a062363ea3
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.album
+id: node.album.changed
+field_name: changed
+entity_type: node
+bundle: album
+label: Змінено
+description: 'Час останнього редагування матеріалу.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

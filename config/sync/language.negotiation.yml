@@ -3,7 +3,7 @@ session:
 url:
   source: path_prefix
   prefixes:
-    uk: ''
+    uk: uk
     en: en
   domains:
     uk: ''

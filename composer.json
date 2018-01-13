@@ -29,6 +29,18 @@
         {
             "type": "package",
             "package": {
+                "name": "kenwheeler/slick",
+                "version": "1.6.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/1.6.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "desandro/imagesloaded",
                 "version": "3.1.8",
                 "type": "drupal-library",
@@ -117,6 +129,7 @@
         "enyo/dropzone": "4.2.0",
         "hammerjs/hammerjs": "^2.0",
         "joeldbirch/superfish": "^1.7",
+        "kenwheeler/slick": "^1.6",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
@@ -173,6 +186,9 @@
             "drupal/page_manager": {
                 "VariantRouteFilter patch": "https://www.drupal.org/files/issues/page_manager_variant_route_filter-2918564.patch",
                 "VariantSelection patch": "https://www.drupal.org/files/issues/page_manager-page_variants_selection-2868216-7.patch"
+            },
+            "drupal/ctools": {
+                "Tempstorage patch": "https://www.drupal.org/files/issues/2936263-tempstore-3.patch"
             }
         }
     }

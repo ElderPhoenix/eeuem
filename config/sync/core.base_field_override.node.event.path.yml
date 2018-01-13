@@ -1,0 +1,20 @@
+uuid: 7c9bbaa8-40c3-46d8-80f0-6dda80b2536e
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.event
+  module:
+    - path
+id: node.event.path
+field_name: path
+entity_type: node
+bundle: event
+label: URL-синонім
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

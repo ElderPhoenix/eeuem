@@ -1,0 +1,18 @@
+uuid: cd667b24-4722-45d7-b5c8-43386444e71c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.event_type
+id: taxonomy_term.event_type.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: event_type
+label: Змінено
+description: 'Час останнього редагування терміна.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+uuid: df0bd1e4-f153-4c04-bda6-2a544d405eb7
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.institutes
+  module:
+    - text
+id: taxonomy_term.institutes.description
+field_name: description
+entity_type: taxonomy_term
+bundle: institutes
+label: Опис
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

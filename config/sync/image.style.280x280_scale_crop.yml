@@ -1,0 +1,14 @@
+uuid: c44e8105-de24-413a-96ce-e9e1a336765c
+langcode: uk
+status: true
+dependencies: {  }
+name: 280x280_scale_crop
+label: '280x280 scale crop'
+effects:
+  a5789240-c8c1-4a0d-a619-e5d56d34953c:
+    uuid: a5789240-c8c1-4a0d-a619-e5d56d34953c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 280
+      height: 280

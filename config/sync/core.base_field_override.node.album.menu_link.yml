@@ -1,0 +1,20 @@
+uuid: f64b480e-c05b-4c9c-ae70-87c38db445fe
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.album
+id: node.album.menu_link
+field_name: menu_link
+entity_type: node
+bundle: album
+label: 'Посилання меню'
+description: 'Обчислене посилання меню для матеріала (доступно лише під час збереження матеріала).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

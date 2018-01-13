@@ -1,0 +1,18 @@
+uuid: e74dc0e7-be2d-4a71-affd-04755d8c5f06
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.banner
+id: node.banner.changed
+field_name: changed
+entity_type: node
+bundle: banner
+label: Змінено
+description: 'Час останнього редагування матеріалу.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

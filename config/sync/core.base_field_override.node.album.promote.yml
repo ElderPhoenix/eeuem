@@ -1,0 +1,22 @@
+uuid: a1eb93b2-001e-4a62-8f75-bd6df478dc78
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.album
+id: node.album.promote
+field_name: promote
+entity_type: node
+bundle: album
+label: 'Винесено на головну сторінку'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

@@ -1,0 +1,8 @@
+uuid: ed70f136-da1c-4d5d-b62a-cc17ca3980dd
+langcode: uk
+status: true
+dependencies: {  }
+id: ukrainian_standard
+label: Стандартна
+locked: false
+pattern: 'd F Y'

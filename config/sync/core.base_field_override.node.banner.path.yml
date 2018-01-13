@@ -1,0 +1,20 @@
+uuid: 1fd8bf49-7277-4520-93d4-8e709d05ee5a
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.banner
+  module:
+    - path
+id: node.banner.path
+field_name: path
+entity_type: node
+bundle: banner
+label: URL-синонім
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

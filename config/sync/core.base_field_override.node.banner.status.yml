@@ -1,0 +1,22 @@
+uuid: 49451d1b-8040-4f39-abbc-0bf2440285bf
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.banner
+id: node.banner.status
+field_name: status
+entity_type: node
+bundle: banner
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean
