@@ -5,12 +5,13 @@ dependencies:
   config:
     - field.field.node.event.field_description
     - field.field.node.event.field_event_address
-    - field.field.node.event.field_event_dates
+    - field.field.node.event.field_event_end_date
     - field.field.node.event.field_event_place_name
+    - field.field.node.event.field_event_start_date
     - field.field.node.event.field_event_type
     - node.type.event
   module:
-    - datetime_range
+    - datetime
     - geolocation
     - text
     - user
@@ -27,7 +28,7 @@ content:
     type: text_default
     region: content
   field_event_address:
-    weight: 5
+    weight: 6
     label: hidden
     settings:
       set_marker: '1'
@@ -59,22 +60,30 @@ content:
     third_party_settings: {  }
     type: geolocation_map
     region: content
-  field_event_dates:
-    weight: 3
+  field_event_end_date:
+    weight: 4
     label: inline
     settings:
-      separator: '-'
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
-    type: daterange_default
+    type: datetime_default
     region: content
   field_event_place_name:
-    weight: 4
+    weight: 5
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+    region: content
+  field_event_start_date:
+    weight: 3
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_event_type:
     weight: 2

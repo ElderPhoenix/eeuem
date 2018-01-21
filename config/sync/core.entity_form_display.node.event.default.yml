@@ -5,12 +5,13 @@ dependencies:
   config:
     - field.field.node.event.field_description
     - field.field.node.event.field_event_address
-    - field.field.node.event.field_event_dates
+    - field.field.node.event.field_event_end_date
     - field.field.node.event.field_event_place_name
+    - field.field.node.event.field_event_start_date
     - field.field.node.event.field_event_type
     - node.type.event
   module:
-    - datetime_range
+    - datetime
     - geolocation
     - path
     - text
@@ -68,11 +69,11 @@ content:
     third_party_settings: {  }
     type: geolocation_googlegeocoder
     region: content
-  field_event_dates:
-    weight: 11
+  field_event_end_date:
+    weight: 28
     settings: {  }
     third_party_settings: {  }
-    type: daterange_default
+    type: datetime_default
     region: content
   field_event_place_name:
     weight: 12
@@ -81,6 +82,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+    region: content
+  field_event_start_date:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_event_type:
     weight: 9

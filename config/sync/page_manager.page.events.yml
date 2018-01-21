@@ -1,0 +1,12 @@
+uuid: 2acd1601-e621-487a-9fd8-2aa0e49582cc
+langcode: uk
+status: true
+dependencies: {  }
+id: events
+label: події
+description: ''
+use_admin_theme: false
+path: /events
+access_logic: and
+access_conditions: {  }
+parameters: {  }

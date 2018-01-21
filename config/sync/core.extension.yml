@@ -11,6 +11,9 @@ module:
   ckeditor: 0
   config: 0
   config_translation: 0
+  context: 0
+  context_active_trail: 0
+  context_ui: 0
   contextual: 0
   crop: 0
   ctools: 0
@@ -42,6 +45,7 @@ module:
   layout_discovery: 0
   link: 0
   locale: 0
+  menu_breadcrumb: 0
   menu_ui: 0
   metatag: 0
   metatag_open_graph: 0
@@ -67,6 +71,7 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  views_infinite_scroll: 0
   views_ui: 0
   menu_link_content: 1
   pathauto: 1

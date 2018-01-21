@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.field_description
     - field.field.node.event.field_event_address
-    - field.field.node.event.field_event_dates
     - field.field.node.event.field_event_place_name
     - field.field.node.event.field_event_type
     - node.type.event
@@ -23,7 +22,6 @@ content:
 hidden:
   field_description: true
   field_event_address: true
-  field_event_dates: true
   field_event_place_name: true
   field_event_type: true
   langcode: true

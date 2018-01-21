@@ -2,8 +2,14 @@ uuid: a3b4f244-40ab-4761-864c-beb156e51c91
 langcode: uk
 status: true
 dependencies:
+  module:
+    - block_class
+    - system
   theme:
     - eeuem
+third_party_settings:
+  block_class:
+    classes: ''
 _core:
   default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
 id: eeuem_page_title
@@ -17,4 +23,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

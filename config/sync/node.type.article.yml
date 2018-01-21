@@ -16,4 +16,4 @@ description: '<em>Статті</em> використовуються для чу
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: false
+display_submitted: true

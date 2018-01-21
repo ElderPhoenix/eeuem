@@ -1,0 +1,60 @@
+uuid: 74d8205d-ebd1-4f24-b4ed-edff244e22ad
+langcode: uk
+status: true
+dependencies:
+  config:
+    - page_manager.page.events
+    - system.menu.main
+    - views.view.kaledrar_podii
+  module:
+    - panels
+    - system
+    - views
+id: events-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    13d4bc9c-76de-46a4-a087-42267bdee5f1:
+      id: 'system_menu_block:main'
+      label: 'Меню розділу'
+      provider: system
+      label_display: visible
+      level: 2
+      depth: 0
+      region: left
+      weight: -1
+      uuid: 13d4bc9c-76de-46a4-a087-42267bdee5f1
+      context_mapping: {  }
+      css_classes: sidebar-menu
+      css_id: ''
+      css_styles: ''
+    0a2ff248-118a-4ea4-be9c-df5204adc8f1:
+      id: 'views_block:kaledrar_podii-block_events_full'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: 0
+      uuid: 0a2ff248-118a-4ea4-be9c-df5204adc8f1
+      context_mapping: {  }
+      css_classes: ''
+      css_id: ''
+      css_styles: ''
+  id: panels_variant
+  uuid: f79fe257-b27c-476c-b984-d31290e9d3fb
+  label: null
+  weight: 0
+  layout: layout_twocol_4_8
+  layout_settings: {  }
+  page_title: 'Календар подій'
+  storage_type: page_manager
+  storage_id: events-panels_variant-0
+  builder: standard
+page: events
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

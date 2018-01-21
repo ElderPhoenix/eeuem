@@ -1,0 +1,30 @@
+uuid: 35813b0c-887b-426b-b454-e922741e61dd
+langcode: uk
+status: true
+dependencies:
+  module:
+    - context_active_trail
+    - ctools
+name: news
+label: Новини
+group: 'Контексти меню'
+description: 'задає активне посилання в меню для новин'
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: 0
+    uuid: 3386332f-b429-4584-bae4-1c80042dca08
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  active_trail:
+    id: active_trail
+    trail: 'main:menu_link_content:e7ff941f-2251-435b-a060-d363c4e027e6'
+    breadcrumbs: 0
+    breadcrumb_title: 0
+    uuid: 4115ef85-0ced-4bc2-bbc5-d14219367c33
+weight: 0

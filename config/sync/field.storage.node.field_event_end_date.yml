@@ -1,17 +1,17 @@
-uuid: 6fd33bf1-03b0-4c3d-8df6-81bdb0964ddc
+uuid: f2fae1ab-7f50-4fc5-a7af-c47f7f21587c
 langcode: uk
 status: true
 dependencies:
   module:
-    - datetime_range
+    - datetime
     - node
-id: node.field_event_dates
-field_name: field_event_dates
+id: node.field_event_end_date
+field_name: field_event_end_date
 entity_type: node
-type: daterange
+type: datetime
 settings:
   datetime_type: datetime
-module: datetime_range
+module: datetime
 locked: false
 cardinality: 1
 translatable: true

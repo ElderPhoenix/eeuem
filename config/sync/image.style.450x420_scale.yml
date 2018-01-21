@@ -1,0 +1,15 @@
+uuid: 1b870c5e-aef6-414c-8ba7-cd3496ae4784
+langcode: uk
+status: true
+dependencies: {  }
+name: 450x420_scale
+label: '750x420 scale'
+effects:
+  55157309-fbf7-46f9-ad6f-96442c515e0a:
+    uuid: 55157309-fbf7-46f9-ad6f-96442c515e0a
+    id: image_scale
+    weight: 1
+    data:
+      width: 750
+      height: 420
+      upscale: false

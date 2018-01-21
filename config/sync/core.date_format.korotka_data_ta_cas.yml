@@ -1,0 +1,8 @@
+uuid: 3c4202a9-535e-4ae2-93ac-2f4956950dfd
+langcode: uk
+status: true
+dependencies: {  }
+id: korotka_data_ta_cas
+label: 'Коротка дата та час'
+locked: false
+pattern: 'd.m.y H:m'

@@ -1,36 +1,36 @@
-uuid: 2cb6bf7d-f67d-4290-a16b-f8edcbbaa395
+uuid: 387368aa-0902-4128-bbe7-b4a77f4fedfe
 langcode: uk
 status: true
 dependencies:
   config:
-    - page_manager.page.node_view
+    - page_manager.page.news
     - system.menu.main
     - views.view.kaledrar_podii
+    - views.view.news
   module:
-    - ctools
     - panels
     - system
     - views
-id: node_view-panels_variant-0
-label: Node
+id: news-panels_variant-0
+label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    58578e1a-28ed-4f2f-b47f-4b899c4a96c8:
-      id: 'entity_view:node'
-      label: 'Вид сутності (Content)'
-      provider: ctools
+    7428147e-6e1f-41a0-8323-a07132b73386:
+      id: 'views_block:news-block_news_list'
+      label: ''
+      provider: views
       label_display: '0'
-      view_mode: default
+      views_label: ''
+      items_per_page: none
       region: right
       weight: 0
-      uuid: 58578e1a-28ed-4f2f-b47f-4b899c4a96c8
-      context_mapping:
-        entity: node
+      uuid: 7428147e-6e1f-41a0-8323-a07132b73386
+      context_mapping: {  }
       css_classes: ''
       css_id: ''
       css_styles: ''
-    ccf26855-7a2a-4103-86fd-40e22dbf79fd:
+    f8547762-069b-4102-9f63-397dc850b4d1:
       id: 'system_menu_block:main'
       label: 'Меню розділу'
       provider: system
@@ -39,12 +39,12 @@ variant_settings:
       depth: 0
       region: left
       weight: -1
-      uuid: ccf26855-7a2a-4103-86fd-40e22dbf79fd
+      uuid: f8547762-069b-4102-9f63-397dc850b4d1
       context_mapping: {  }
       css_classes: sidebar-menu
       css_id: ''
       css_styles: ''
-    524e8c92-75a1-4c31-b5e3-2de80a2c439f:
+    f8725767-e83f-406d-af21-dfb6d4c6c19f:
       id: 'views_block:kaledrar_podii-block_events_small'
       label: ''
       provider: views
@@ -53,22 +53,22 @@ variant_settings:
       items_per_page: none
       region: left
       weight: 0
-      uuid: 524e8c92-75a1-4c31-b5e3-2de80a2c439f
+      uuid: f8725767-e83f-406d-af21-dfb6d4c6c19f
       context_mapping: {  }
       css_classes: ''
       css_id: ''
       css_styles: ''
   id: panels_variant
-  uuid: ff001d29-ecbf-4c01-baf5-0ad80d57822d
+  uuid: 2c660824-2aa2-48db-84a5-fc081fa7dd49
   label: null
   weight: 0
   layout: layout_twocol_4_8
   layout_settings: {  }
-  page_title: '[node:title]'
+  page_title: 'Новини університету'
   storage_type: page_manager
-  storage_id: node_view-panels_variant-0
+  storage_id: news-panels_variant-0
   builder: standard
-page: node_view
+page: news
 weight: 0
 selection_criteria: {  }
 selection_logic: and

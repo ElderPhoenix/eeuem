@@ -1,0 +1,30 @@
+uuid: 82f64350-240d-4417-80d7-e9c44c3f24d0
+langcode: uk
+status: true
+dependencies:
+  module:
+    - context_active_trail
+    - ctools
+name: events
+label: Події
+group: 'Контексти меню'
+description: 'Задаэ активне посилання меню для подій'
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: 0
+    uuid: 038ccd7d-004a-412c-b037-8f64a3cf419d
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  active_trail:
+    id: active_trail
+    trail: 'main:menu_link_content:b4af85fc-7c2b-436e-968a-240bfa63abd6'
+    breadcrumbs: 0
+    breadcrumb_title: 0
+    uuid: 22bdec68-f830-4742-844f-0315f831d417
+weight: 0

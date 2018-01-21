@@ -21,8 +21,8 @@ variant_settings:
       label_display: '0'
       views_label: ''
       items_per_page: none
-      region: content
-      weight: 0
+      region: slider
+      weight: -10
       uuid: e0c6ba4d-88b8-44c1-8ffe-72eba3ac59f9
       context_mapping: {  }
       css_classes: 'front-slider row'
@@ -35,8 +35,8 @@ variant_settings:
       label_display: visible
       views_label: Новини
       items_per_page: none
-      region: content
-      weight: 1
+      region: heading
+      weight: 0
       uuid: 80afce88-4475-4c16-adb7-3c3afa3b0672
       context_mapping: {  }
       css_classes: ''
@@ -46,9 +46,9 @@ variant_settings:
   uuid: f19fa676-681a-4faf-a942-6e21ae30e578
   label: null
   weight: 0
-  layout: layout_onecol
+  layout: layout_frontpage
   layout_settings: {  }
-  page_title: ''
+  page_title: Головна
   storage_type: page_manager
   storage_id: main-panels_variant-0
   builder: standard
