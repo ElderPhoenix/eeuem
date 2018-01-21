@@ -4,10 +4,33 @@ layout_twocol_4_8:
   template: layout--twocol-4-8
   category: 'Columns: 2'
   default_region: right
-  icon_map:
-    - [left, right]
   regions:
     left:
       label: Sidebar
     right:
       label: Main
+layout_frontpage:
+  label: 'EEUEM front page layout'
+  path: layouts/frontpage
+  template: layout--frontpage
+  category: 'Columns: 1'
+  default_region: right
+  regions:
+    slider:
+      label: Slider
+    heading:
+      label: Heading
+    main_sidebar:
+      label: Main Sidebar
+    main_heading:
+      label: Main section heading
+    main_left:
+      label: Main section left part
+    main_right:
+      label: Main section right part
+    bottom:
+      label: Bottom section
+    footer:
+      label: Footer
+
+
