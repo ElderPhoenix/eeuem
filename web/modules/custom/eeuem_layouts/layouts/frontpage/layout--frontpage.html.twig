@@ -1,0 +1,80 @@
+{#
+/**
+ * @file
+ * Template for a 2 column panel layout.
+ *
+ * This template provides a two column 4-8 panel display layout.
+ *
+ * Variables:
+ * - $id: An optional CSS id to use for the layout.
+ * - $content: An array of content, each item in the array is keyed to one
+ *   panel of the layout. This layout supports the following sections:
+ *   - content.left: Content in the left column.
+ *   - content.right: Content in the right column.
+ */
+#}
+{%
+  set classes = [
+  'layout',
+  'layout--frontpage',
+  'row'
+]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if content.slider %}
+      <div {{ region_attributes.slider.addClass('layout__region', 'layout__region--slider', 'col-sm-12', 'hidden-xs') }}>
+        {{ content.slider }}
+      </div>
+    {% endif %}
+
+    {% if content.heading %}
+      <div {{ region_attributes.heading.addClass('layout__region', 'layout__region--slider', 'col-sm-12') }}>
+        {{ content.heading }}
+      </div>
+    {% endif %}
+
+    <div class="container layout__region layout__region--main">
+      <div class="row">
+        {% if content.main_sidebar %}
+          <div {{ region_attributes.main_sidebar.addClass('layout__region', 'layout__region--main-sidebar', 'col-sm-4', 'hiddden-xs') }}>
+            {{ content.main_sidebar }}
+          </div>
+        {% endif %}
+        <div class="layout__region layout__region--main-main col-sm-8">
+          <div class="row">
+            {% if content.main_heading %}
+              <div {{ region_attributes.main_heading.addClass('layout__region', 'layout__region--main-heading', 'col-sm-12') }}>
+                {{ content.main_heading }}
+              </div>
+            {% endif %}
+          </div>
+          <div class="row">
+            {% if content.main_left %}
+              <div {{ region_attributes.main_left.addClass('layout__region', 'layout__region--main-left', 'col-sm-6') }}>
+                {{ content.main_left }}
+              </div>
+            {% endif %}
+            {% if content.main_right %}
+              <div {{ region_attributes.main_left.addClass('layout__region', 'layout__region--main-right', 'col-sm-6') }}>
+                {{ content.main_right }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% if content.bottom %}
+      <div {{ region_attributes.bottom.addClass('layout__region', 'layout__region--bottom', 'col-sm-12') }}>
+        {{ content.bottom }}
+      </div>
+    {% endif %}
+
+    {% if content.footer %}
+      <div {{ region_attributes.footer.addClass('layout__region', 'layout__region--footer', 'col-sm-12') }}>
+        {{ content.footer }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

@@ -16,13 +16,14 @@
 {%
   set classes = [
   'layout',
-  'layout--twocol-25-75',
+  'layout--twocol-4-8',
+  'row'
 ]
 %}
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     {% if content.left %}
-      <div {{ region_attributes.left.addClass('layout__region', 'layout__region--left', 'col-sm-4') }}>
+      <div {{ region_attributes.left.addClass('layout__region', 'layout__region--left', 'col-sm-4', 'hidden-xs') }}>
         {{ content.left }}
       </div>
     {% endif %}
