@@ -6,6 +6,10 @@
 
   .block-wrapper {
     @extend .container;
+    
+    @media (max-width: 599px) {
+      max-width: 420px;
+    }
   }
 
   .block-title {
@@ -50,21 +54,38 @@
   }
 
   .slide__description {
-    @include make-xs-column(6);
-    height: 180px;
+    @include make-sm-column(6);
+    height: 150px;
     padding-left: $spacer-vertical-tiny;
     background-color: $bg_main;
+
+    @media (min-width: $screen-sm-min) {
+      height: 172.5px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      height: 227.5px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      height: 180px;
+    }
 
     .views-more-link {
       display: block;
       clear: both;
-      padding: $spacer-vertical-reduced 0;
+      padding: $spacer-vertical-tiny 0;
     }
   }
 
   .slide__media {
-    @include make-xs-column(6);
+    display: none;
+    @include make-sm-column(6);
     padding: 0;
+
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
 
     img {
       width: 100%;

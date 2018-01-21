@@ -1,0 +1,5 @@
+.layout--twocol-4-8 .block-region-left {
+  & > * {
+    margin-bottom: $spacer-vertical-standard * 2;
+  }
+}

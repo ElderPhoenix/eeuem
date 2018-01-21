@@ -1,0 +1,18 @@
+.block-entity-viewnode {
+  .content > div {
+    margin-bottom: $spacer-vertical-standard;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  footer {
+    margin-bottom: $spacer-vertical-reduced;
+  }
+
+  .author {
+    padding-top: 0;
+    color: $text_main;
+  }
+}

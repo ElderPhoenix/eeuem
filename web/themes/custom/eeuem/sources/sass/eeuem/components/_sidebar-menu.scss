@@ -1,0 +1,25 @@
+.sidebar-menu {
+  h2 {
+    @include block-caption;
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+
+    .menu-item {
+      display: block;
+      margin-bottom: $spacer-vertical-tiny;
+      padding-bottom: $spacer-vertical-tiny;
+      border-bottom: 1px solid $text_muted;
+
+      a {
+        text-transform: uppercase;
+      }
+
+      &.menu-item--active-trail a {
+
+      }
+    }
+  }
+}

@@ -6,7 +6,10 @@ header.navbar {
   margin-bottom: 0;
 
   .navbar-header {
-    width: 100%;
+    display: block;
+    @include make-row();
+    float: none;
+    width: auto;
   }
 
   .region-navigation-top,
@@ -18,7 +21,7 @@ header.navbar {
   .block-responsive-menu-toggle {
     position: absolute;
     top: 0;
-    left: -11px;
+    left: 2px;
     width: 44px;
     height: 35px;
 
@@ -79,13 +82,14 @@ header.navbar {
   .search-block-form {
     width: 100%;
     clear: both;
-    padding: 15px 0;
+    padding: $spacer-horizontal-reduced;
 
     @media (min-width: $screen-sm-min){
       position: absolute;
       bottom: 0;
       right: $grid-gutter-width/2;
       width: 17rem;
+      padding: $spacer-vertical-reduced 0;
     }
 
     .form-group {

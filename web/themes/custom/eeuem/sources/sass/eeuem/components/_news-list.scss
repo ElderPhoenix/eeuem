@@ -1,0 +1,69 @@
+.block-views-blocknews-block-news-list {
+  .views-row {
+    @include clearfix;
+    margin-bottom: $spacer-vertical-standard;
+    box-shadow: 2px 10px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .views-field-title {
+    margin: 0;
+    padding: $spacer-vertical-tiny $spacer-horizontal-tiny 0 $spacer-horizontal-tiny;
+    background-color: $accent1;
+
+    .title {
+      display: block;
+      overflow: hidden;
+      text-align: center;
+
+      a {
+        font-size: $font_size-heading-secondary;
+        color: $text_alt;
+      }
+    }
+
+    .date {
+      display: block;
+      padding: $spacer-vertical-reduced 0;
+      text-align: right;
+      text-transform: none;
+      color: $text_alt;
+      font-size: $font-size-base;
+    }
+  }
+
+  .views-field-field-image {
+    @include make-sm-column(4);
+    padding-left: 0;
+
+    @media (max-width: $screen-xs-max) {
+      padding-right: 0;
+    }
+
+    img {
+      display: block;
+      width: auto;
+      margin: auto;
+
+      @media (min-width: $screen-sm-min) {
+        width: 100%;
+        margin: 0;
+      }
+
+    }
+  }
+
+  .views-field-body {
+    @include make-sm-column(8);
+    padding-top: $spacer-vertical-tiny;
+
+    @media (min-width: $screen-sm-min) {
+      padding-right: $spacer-vertical-tiny;
+    }
+
+    .views-more-link {
+      display: block;
+      clear: both;
+      padding: $spacer-vertical-tiny 0;
+    }
+  }
+}

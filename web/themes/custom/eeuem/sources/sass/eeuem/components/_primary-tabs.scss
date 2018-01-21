@@ -1,0 +1,26 @@
+.tabs.primary {
+  @include clearfix;
+  margin-bottom: 0;
+  padding: $spacer-vertical-tiny 0;
+  list-style: none;
+
+  li {
+    display: block;
+    float: left;
+
+    a {
+      display: block;
+      padding: $spacer-vertical-tiny $spacer-horizontal-reduced;
+    }
+
+    a:hover {
+      background-color: $accent1;
+      color: $text_alt;
+    }
+
+    &.is-active a {
+      background-color: $accent1;
+      color: $text_alt;
+    }
+  }
+}

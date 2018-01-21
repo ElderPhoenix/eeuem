@@ -1,0 +1,40 @@
+.block-views-blockkaledrar-podii-block-events-full {
+  .views-row {
+    @include clearfix;
+    margin-bottom: $spacer-vertical-standard;
+    box-shadow: 2px 10px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .views-field-field-event-end-date {
+    padding: $spacer-vertical-tiny $spacer-horizontal-reduced 0 $spacer-horizontal-reduced;
+    background-color: $accent1;
+    color: $text_alt;
+    text-align: center;
+    font-size: $font_size-heading-secondary;
+  }
+
+  .views-field-title {
+    padding: 0 $spacer-horizontal-reduced $spacer-vertical-tiny $spacer-horizontal-reduced;
+    background-color: $accent1;
+
+    a {
+      display: block;
+      color: $text_alt;
+      text-align: center;
+      font-size: $font_size-heading-secondary;
+    }
+  }
+
+  .views-field-field-description,
+  .views-field-field-event-place-name,
+  .views-field-view-node {
+    @include make-sm-column(12);
+    padding-top: $spacer-vertical-tiny;
+    padding-bottom: $spacer-vertical-tiny;
+  }
+
+  .views-label-field-event-place-name {
+    font-weight: bold;
+  }
+}
+

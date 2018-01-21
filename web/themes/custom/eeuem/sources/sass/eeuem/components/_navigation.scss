@@ -6,6 +6,15 @@
     & > .menu-item {
       display: block;
       float: left;
+      
+      @media (min-width: $screen-lg-min) {
+        padding-right: 27.5px;
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+
 
       & > a,
       & > span {
@@ -19,6 +28,29 @@
         &:hover {
           color: $text_alt;
           background-color: $accent1;
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+          font-size: $font_size-reduced;
+          padding: $spacer-vertical-reduced 6.4px;
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+          padding: $spacer-vertical-reduced 14.5px;
+        }
+      }
+
+      &:first-of-type > a,
+      &:first-of-type > span {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
+          padding-left: $spacer-horizontal-reduced;
+        }
+      }
+
+      &:last-of-type > a,
+      &:last-of-type > span {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
+          padding-right: $spacer-horizontal-reduced;
         }
       }
 
