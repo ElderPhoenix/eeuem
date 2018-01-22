@@ -1,0 +1,6 @@
+name: EEUEM Utility
+core: 8.x
+description: Misc utility functions and alterations.
+package: EEUEM
+type: module
+version: VERSION

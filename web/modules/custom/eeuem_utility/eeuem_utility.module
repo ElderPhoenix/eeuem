@@ -1,0 +1,12 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function eeuem_utility_form_entity_embed_dialog_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (!empty($form['attributes']['data-entity-embed-display-settings']['description'])) {
+    $form['attributes']['data-entity-embed-display-settings']['description']['#maxlength'] = 256;
+  }
+}
