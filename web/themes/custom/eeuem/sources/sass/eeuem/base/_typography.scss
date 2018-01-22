@@ -10,12 +10,12 @@ body {
 }
 
 h1 {
-  font-size: $font_size-heading-primary;
+  @include responsive-font-heading-primary;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: $font_size-heading-primary;
+  @include responsive-font-heading-primary;
   text-transform: uppercase;
 }
 

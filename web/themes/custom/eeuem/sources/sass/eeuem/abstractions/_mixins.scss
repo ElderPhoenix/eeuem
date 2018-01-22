@@ -1,5 +1,5 @@
 // Typography.
-@mixin responsive-font-heading-secondary {
+@mixin responsive-font-heading-primary {
   font-size: $font_size-heading-primary-mobile;
 
   @media (min-width: $screen-sm-min) {
@@ -8,7 +8,7 @@
 }
 
 @mixin section-title {
-  @include responsive-font-heading-secondary;
+  @include responsive-font-heading-primary;
   text-transform: uppercase;
   color: $text_alt;
 }
@@ -17,7 +17,7 @@
   @include section-title;
   display: inline-block;
   margin: 0 0 $spacer-vertical-standard 0;
-  padding: 1rem 2rem;
+  padding: $spacer-vertical-reduced $spacer-horizontal-reduced;
   background-color: $accent2;
   color: $text_alt;
 }

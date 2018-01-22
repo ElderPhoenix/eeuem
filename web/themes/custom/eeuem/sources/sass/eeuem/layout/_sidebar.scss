@@ -1,4 +1,5 @@
-.layout--twocol-4-8 .block-region-left {
+.region-sidebar-first {
+  padding-top: $spacer-vertical-reduced;
   & > * {
     margin-bottom: $spacer-vertical-standard * 2;
   }

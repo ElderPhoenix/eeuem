@@ -1,4 +1,5 @@
-.block-entity-viewnode {
+// General layout.
+.node-view {
   .content > div {
     margin-bottom: $spacer-vertical-standard;
 
@@ -14,5 +15,27 @@
   .author {
     padding-top: 0;
     color: $text_main;
+  }
+
+  .links.inline {
+    margin-left: 0;
+    margin-top: $spacer-vertical-reduced;
+    border-top: 1px solid $text-muted;
+    padding-top: $spacer-vertical-tiny;
+  }
+}
+
+// News nodes.
+.node-view.article {
+  footer {
+    margin-top: -$spacer-vertical-standard;
+    margin-bottom: $spacer-vertical-standard;
+    padding: 0 $spacer-horizontal-reduced $spacer-vertical-tiny $spacer-horizontal-reduced;
+    background-color: $accent1;
+    color: $text_alt;
+
+    * {
+      color: $text_alt;
+    }
   }
 }

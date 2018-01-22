@@ -67,6 +67,7 @@
 #}
 {%
   set classes = [
+    'node-view',
     node.bundle|clean_class,
     node.isPromoted() ? 'is-promoted',
     node.isSticky() ? 'is-sticky',
@@ -76,6 +77,14 @@
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
   {% if display_submitted %}
     <footer>
       {{ author_picture }}
