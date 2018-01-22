@@ -23,7 +23,7 @@ conditions:
 reactions:
   active_trail:
     id: active_trail
-    trail: 'main:menu_link_content:e7ff941f-2251-435b-a060-d363c4e027e6'
+    trail: 'main:views_view:views.news.page_news_list'
     breadcrumbs: 0
     breadcrumb_title: 0
     uuid: 4115ef85-0ced-4bc2-bbc5-d14219367c33

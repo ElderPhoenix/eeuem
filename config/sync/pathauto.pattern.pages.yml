@@ -1,0 +1,22 @@
+uuid: 55c93c59-a641-433e-b556-7122a4db24ca
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+id: pages
+label: Сторінки
+type: 'canonical_entities:node'
+pattern: 'pages/[node:menu-link:parent:title]/[node:title]'
+selection_criteria:
+  4938a60f-3eac-4f14-8fe7-d2e66cfcd8f1:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4938a60f-3eac-4f14-8fe7-d2e66cfcd8f1
+selection_logic: and
+weight: -5
+relationships: {  }

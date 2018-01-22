@@ -1,0 +1,15 @@
+uuid: 4c0d30dc-4f48-4643-8220-54979d29108d
+langcode: uk
+status: true
+dependencies: {  }
+name: 120_x_auto_scale
+label: '120 x auto scale'
+effects:
+  832ac42d-cf41-4607-8ff3-57e96a1b0235:
+    uuid: 832ac42d-cf41-4607-8ff3-57e96a1b0235
+    id: image_scale
+    weight: 1
+    data:
+      width: 120
+      height: null
+      upscale: true

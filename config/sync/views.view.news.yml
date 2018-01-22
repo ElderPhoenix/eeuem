@@ -7,6 +7,7 @@ dependencies:
     - field.storage.node.field_image
     - image.style.450x420_scale
     - node.type.article
+    - system.menu.main
   module:
     - image
     - node
@@ -465,6 +466,35 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image'
+  page_news_list:
+    display_plugin: page
+    id: page_news_list
+    display_title: Сторінка
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      path: news
+      menu:
+        type: normal
+        title: Новини
+        description: ''
+        expanded: true
+        parent: 'menu_link_content:36403241-53fc-4fd0-9e19-3fcefbd71413'
+        weight: 0
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

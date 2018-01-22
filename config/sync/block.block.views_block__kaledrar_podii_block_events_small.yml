@@ -1,0 +1,34 @@
+uuid: 33b416aa-572b-47d0-aa23-80c6ab27d3f3
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.kaledrar_podii
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - eeuem
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__kaledrar_podii_block_events_small
+theme: eeuem
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'views_block:kaledrar_podii-block_events_small'
+settings:
+  id: 'views_block:kaledrar_podii-block_events_small'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/events"
+    negate: true
+    context_mapping: {  }

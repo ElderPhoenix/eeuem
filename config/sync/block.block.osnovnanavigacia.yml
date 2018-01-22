@@ -1,0 +1,33 @@
+uuid: d1fb26d8-24d8-4589-b91f-3311cc292abb
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - system
+  theme:
+    - eeuem
+third_party_settings:
+  block_class:
+    classes: sidebar-menu
+id: osnovnanavigacia
+theme: eeuem
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Меню розділу'
+  provider: system
+  label_display: visible
+  level: 2
+  depth: 2
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

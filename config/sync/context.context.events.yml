@@ -23,7 +23,7 @@ conditions:
 reactions:
   active_trail:
     id: active_trail
-    trail: 'main:menu_link_content:b4af85fc-7c2b-436e-968a-240bfa63abd6'
+    trail: 'main:views_view:views.kaledrar_podii.page_events_list'
     breadcrumbs: 0
     breadcrumb_title: 0
     uuid: 22bdec68-f830-4742-844f-0315f831d417
