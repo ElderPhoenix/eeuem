@@ -1,0 +1,22 @@
+uuid: 55efd5eb-35b7-469e-b0dd-c77d502ad481
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+id: albums
+label: Альбоми
+type: 'canonical_entities:node'
+pattern: 'albums/[node:title]'
+selection_criteria:
+  bc0e0984-3286-4184-ad17-ec987812f293:
+    id: node_type
+    bundles:
+      album: album
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bc0e0984-3286-4184-ad17-ec987812f293
+selection_logic: and
+weight: -5
+relationships: {  }

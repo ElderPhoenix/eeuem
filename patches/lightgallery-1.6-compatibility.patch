@@ -1,0 +1,19 @@
+diff --git a/lightgallery.libraries.yml b/lightgallery.libraries.yml
+index 4048a8f..52efcf7 100644
+--- a/lightgallery.libraries.yml
++++ b/lightgallery.libraries.yml
+@@ -6,13 +6,7 @@ lightgallery:
+     url: 'https://github.com/sachinchoolur/lightGallery/blob/1.2.21/LICENSE.md'
+     gpl-compatible: false
+   js:
+-    /libraries/lightgallery/dist/js/lightgallery.min.js: {}
+-    /libraries/lightgallery/dist/js/lg-autoplay.min.js: {}
+-    /libraries/lightgallery/dist/js/lg-fullscreen.min.js: {}
+-    /libraries/lightgallery/dist/js/lg-thumbnail.min.js: {}
+-    /libraries/lightgallery/dist/js/lg-video.min.js: {}
+-    /libraries/lightgallery/dist/js/lg-zoom.min.js: {}
+-    /libraries/lightgallery/dist/js/lg-hash.min.js: {}
++    /libraries/lightgallery/dist/js/lightgallery-all.min.js: {}
+   css:
+     theme:
+       /libraries/lightgallery/dist/css/lightgallery.min.css: {}

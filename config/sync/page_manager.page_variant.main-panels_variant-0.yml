@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - page_manager.page.main
+    - views.view.albums_carousel
     - views.view.front_slider
     - views.view.news_carousel
   module:
@@ -38,6 +39,20 @@ variant_settings:
       region: heading
       weight: 0
       uuid: 80afce88-4475-4c16-adb7-3c3afa3b0672
+      context_mapping: {  }
+      css_classes: ''
+      css_id: ''
+      css_styles: ''
+    5245dd1e-0f03-4174-8533-7434ca46e199:
+      id: 'views_block:albums_carousel-block_albums_carousel'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: bottom
+      weight: 0
+      uuid: 5245dd1e-0f03-4174-8533-7434ca46e199
       context_mapping: {  }
       css_classes: ''
       css_id: ''

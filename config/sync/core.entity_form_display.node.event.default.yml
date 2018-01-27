@@ -9,10 +9,12 @@ dependencies:
     - field.field.node.event.field_event_place_name
     - field.field.node.event.field_event_start_date
     - field.field.node.event.field_event_type
+    - field.field.node.event.field_metatags
     - node.type.event
   module:
     - datetime
     - geolocation
+    - metatag
     - path
     - text
 id: node.event.default
@@ -94,6 +96,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_metatags:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   langcode:
     type: language_select

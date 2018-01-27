@@ -9,10 +9,12 @@ dependencies:
     - field.field.node.event.field_event_place_name
     - field.field.node.event.field_event_start_date
     - field.field.node.event.field_event_type
+    - field.field.node.event.field_metatags
     - node.type.event
   module:
     - datetime
     - geolocation
+    - metatag
     - text
     - user
 id: node.event.default
@@ -84,6 +86,13 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_metatags:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   links:
     weight: 5

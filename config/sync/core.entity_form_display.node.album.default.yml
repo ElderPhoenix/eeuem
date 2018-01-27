@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.album.field_album_date
     - field.field.node.album.field_description
     - field.field.node.album.field_image
+    - field.field.node.album.field_metatags
     - field.field.node.album.field_photos
     - node.type.album
   module:
     - datetime
     - entity_browser
+    - metatag
     - path
     - text
 id: node.album.default
@@ -51,6 +53,12 @@ content:
       view_mode: default
     third_party_settings: {  }
     type: entity_browser_file
+    region: content
+  field_metatags:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_photos:
     weight: 12

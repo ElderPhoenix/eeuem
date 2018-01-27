@@ -1,0 +1,23 @@
+uuid: 93ed9726-873a-4a7d-9076-19fbeb429761
+langcode: uk
+status: true
+dependencies: {  }
+name: 420_x_236_scale_crop
+label: '420 x 236 scale crop'
+effects:
+  51411cdd-8747-4c6c-ab2d-a038f5354a5b:
+    uuid: 51411cdd-8747-4c6c-ab2d-a038f5354a5b
+    id: image_scale
+    weight: 1
+    data:
+      width: 420
+      height: null
+      upscale: true
+  ce4e85d7-adca-438e-b69a-05d20d6093f1:
+    uuid: ce4e85d7-adca-438e-b69a-05d20d6093f1
+    id: image_crop
+    weight: 2
+    data:
+      width: 420
+      height: 236
+      anchor: center-top

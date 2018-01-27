@@ -4,4 +4,9 @@
   &.align-left {
     margin-right: $spacer-horizontal-tiny;
   }
+
+  &.align-center {
+    display: table;
+    margin: auto;
+  }
 }

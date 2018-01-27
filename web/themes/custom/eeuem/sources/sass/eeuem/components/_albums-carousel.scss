@@ -1,0 +1,60 @@
+.block-views-blockalbums-carousel-block-albums-carousel {
+  @include make-row();
+  padding: $spacer-vertical-standard 0;
+
+  .block-wrapper {
+    @extend .container;
+
+    @media (max-width: 599px) {
+      max-width: 420px;
+    }
+  }
+  .block-title {
+     @include block-caption;
+   }
+
+  .view-display-id-block_albums_carousel {
+    @include make-row();
+  }
+
+  .slick__slide {
+    position: relative;
+    padding: 0 $grid-gutter-width/2;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .slick-dots {
+    text-align: center;
+    padding: $spacer-horizontal-standard 0 0 0;
+  }
+
+  .slide__title,
+  .slide__description {
+    position: absolute;
+    left: 0;
+    width: calc(100% - #{$spacer-horizontal-reduced} * 2);
+    margin: 0 $spacer-horizontal-reduced;
+    padding: $spacer-vertical-tiny;
+    background-color: $accent1;
+    opacity: 0.8;
+
+    * {
+      color: $text_alt;
+    }
+  }
+
+  .slide__title {
+    top: 0;
+
+    a {
+      font-size: $font-size-base;
+    }
+  }
+
+  .slide__description {
+    bottom: 0;
+  }
+}

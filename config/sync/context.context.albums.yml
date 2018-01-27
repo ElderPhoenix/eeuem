@@ -1,0 +1,30 @@
+uuid: 0ef49cb5-305c-401b-b5cc-289483de9611
+langcode: uk
+status: true
+dependencies:
+  module:
+    - context_active_trail
+    - ctools
+name: albums
+label: Альбоми
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      album: album
+    negate: 0
+    uuid: b7b49c16-12a6-414f-b7fa-6899452e251e
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  active_trail:
+    id: active_trail
+    trail: 'main:views_view:views.albums.page_albums'
+    breadcrumbs: 0
+    breadcrumb_title: 0
+    uuid: 42ce0c2d-27cc-4441-9859-5c633dc99d06
+weight: 0

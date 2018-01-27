@@ -1,24 +1,31 @@
-uuid: ff3dd3b6-8973-49dc-9348-692c5fee6a81
+uuid: b81efb70-29cc-4e92-80e0-88dfe60cd26e
 langcode: uk
 status: true
 dependencies:
   config:
     - field.storage.node.field_photos
-    - node.type.album
+    - node.type.page
   module:
+    - content_translation
     - image
-id: node.album.field_photos
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.page.field_photos
 field_name: field_photos
 entity_type: node
-bundle: album
+bundle: page
 label: Фотографії
 description: ''
-required: true
-translatable: false
+required: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: 'gallery/[date:custom:Y]-[date:custom:m]'
+  file_directory: 'pages/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '8 MB'
   max_resolution: ''

@@ -26,7 +26,8 @@
 }
 
 // News nodes.
-.node-view.article {
+.node-view.article,
+.node-view.album {
   footer {
     margin-top: -$spacer-vertical-standard;
     margin-bottom: $spacer-vertical-standard;

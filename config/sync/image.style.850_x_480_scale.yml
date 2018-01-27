@@ -1,0 +1,15 @@
+uuid: 7f8f94f9-b7d5-4b76-88d4-7bb91b80ec86
+langcode: uk
+status: true
+dependencies: {  }
+name: 850_x_480_scale
+label: '850 x 480 scale'
+effects:
+  af03e316-58a5-4818-bee0-71256e573da8:
+    uuid: af03e316-58a5-4818-bee0-71256e573da8
+    id: image_scale
+    weight: 1
+    data:
+      width: 850
+      height: 480
+      upscale: false

@@ -1,0 +1,23 @@
+uuid: 97646aa6-a921-48ad-a6c8-7f7613d0fc9d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.event
+  module:
+    - metatag
+id: node.event.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: event
+label: Мета-теґи
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

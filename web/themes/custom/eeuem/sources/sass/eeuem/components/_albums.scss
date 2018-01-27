@@ -1,0 +1,35 @@
+.view-display-id-page_albums {
+  .view-content {
+    @include clearfix;
+    @include make-row();
+  }
+
+  .views-row {
+    @include make-sm-column(6);
+    margin-bottom: $spacer-vertical-reduced;
+  }
+
+  .album-link {
+    display: block;
+    position: relative;
+  }
+
+  .album-title,
+  .album-date {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: $spacer-vertical-tiny;
+    background-color: $accent1;
+    color: $text_alt;
+    opacity: 0.8;
+  }
+
+  .album-title {
+    top: 0;
+  }
+
+  .album-date {
+    bottom: 0;
+  }
+}
